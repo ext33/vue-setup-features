@@ -35,6 +35,7 @@ All my features for VueJS you may find in `vue-features` folder.
 ### Run mongo daemon
 ```
 ~$ sudo systemctl start mongodb
+~$ mongo
 ```
 ### Stop mongo daemon
 ```
