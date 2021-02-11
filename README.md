@@ -24,3 +24,19 @@ All my features for VueJS you may find in `vue-features` folder.
 ```
 ~$ sudo apt-get install docker.io docker-compose
 ```
+
+## Mongo setup
+
+### Install mongo in Ubuntu
+```
+~$ wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
+~$ sudo apt-get install -y mongodb
+```
+### Run mongo daemon
+```
+~$ sudo systemctl start mongodb
+```
+### Stop mongo daemon
+```
+~$ sudo systemctl stop mongodb
+```
