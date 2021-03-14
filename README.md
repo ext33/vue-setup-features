@@ -10,34 +10,42 @@ All my features for VueJS you may find in `vue-features` folder.
 
 ### Node install (v14.x) in Ubuntu
 ```
-~$ curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
-~$ sudo apt-get install -y nodejs
+$ curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+$ sudo apt-get install -y nodejs
 ```
 ### Yarn install
 ```
-~$ sudo npm install -g yarn
+$ sudo npm install -g yarn
 ```
 
 ## Docker setup
 
 ### Install docker in Ubuntu
 ```
-~$ sudo apt-get install docker.io docker-compose
+$ sudo apt-get install docker.io docker-compose
 ```
 
 ## Mongo setup
 
 ### Install mongo in Ubuntu
 ```
-~$ wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
-~$ sudo apt-get install -y mongodb
+$ wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
+$ sudo apt-get install -y mongodb
 ```
 ### Run mongo daemon
 ```
-~$ sudo systemctl start mongodb
-~$ mongo
+$ sudo systemctl start mongodb
+$ mongo
 ```
 ### Stop mongo daemon
 ```
-~$ sudo systemctl stop mongodb
+$ sudo systemctl stop mongodb
+```
+
+## Mongo in docker
+
+### Setup and run
+```
+$ docker pull mongo
+$ docker run mongo -p 27017:27017
 ```
