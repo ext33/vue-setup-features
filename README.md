@@ -44,8 +44,12 @@ $ sudo systemctl stop mongodb
 
 ## Mongo in docker
 
-### Setup and run
+### Setup
 ```
 $ docker pull mongo
-$ docker run mongo -p 27017:27017
+$ docker run --name mongodb -p 27017:27017 mongo
+```
+### Start
+```
+$ docker start -i mongodb
 ```
